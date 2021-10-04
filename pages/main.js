@@ -1,10 +1,12 @@
+import { Box } from '@chakra-ui/layout';
 import React from 'react';
+import MainLayout from '../layouts/MainLayout';
 
 const main = () => {
     return (
-        <div>
-            dfggfhgfhfgh
-        </div>
+        <MainLayout>
+            <Box h='89vh'>SignUp</Box>;
+        </MainLayout>
     );
 };
 
