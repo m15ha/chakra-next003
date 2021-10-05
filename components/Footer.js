@@ -71,7 +71,7 @@ export default function SmallWithLogoLeft() {
                 justify={{ base: 'center', md: 'space-between' }}
                 align={{ base: 'center', md: 'center' }}
             >
-                <Text fontSize='sm'>© 2021. All rights reserved</Text>
+                <Text fontSize='sm'>© {new Date().getFullYear()}. All rights reserved</Text>
                 <Flex direction={'row'} spacing={6}>
                     <Text fontSize='sm'>
                         {' '}

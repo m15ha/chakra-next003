@@ -1,9 +1,10 @@
 import { Button } from '@chakra-ui/button';
-import { ArrowForwardIcon, CalendarIcon, StarIcon } from '@chakra-ui/icons';
+import { ArrowForwardIcon, CalendarIcon } from '@chakra-ui/icons';
 import { Image } from '@chakra-ui/image';
 import NextLink from 'next/link';
 import { Badge, Box, Flex } from '@chakra-ui/layout';
 import React from 'react';
+import { AspectRatio } from '@chakra-ui/react';
 
 const EventItem = ({
     id,
@@ -29,28 +30,29 @@ const EventItem = ({
             overflow='hidden'
             _hover={{ shadow: 'lg' }}
         >
-            <Image src={'/' + image} alt={title} />
-
+            <AspectRatio ratio={16 / 9}>
+                <Image src={'/' + image} alt={title} maxH='180' />
+            </AspectRatio>
             <Box d='flex' p='4' flexGrow='1' flexDirection='column'>
-                <Box d='flex' alignItems='baseline' >
+                <Box d='flex' alignItems='baseline'>
                     <Badge borderRadius='full' px='2' colorScheme='teal'>
                         {humanReadableDate}
                     </Badge>
-                    <Box
-                        color='gray.500'
-                        fontWeight='semibold'
-                        letterSpacing='wide'
-                        fontSize='sm'
-                        as='h4'
-                        textTransform='uppercase'
-                        ml='2'
-                    >
-                        {title}
-                    </Box>
+                </Box>
+                <Box
+                    color='gray.500'
+                    fontWeight='semibold'
+                    letterSpacing='wide'
+                    fontSize='sm'
+                    as='h4'
+                    mt='2'
+                    textTransform='uppercase'                    
+                >
+                    {title}
                 </Box>
 
                 <Box
-                    mt='1'
+                    mt='2'
                     fontWeight='semibold'
                     fontSize='xs'
                     lineHeight='tight'

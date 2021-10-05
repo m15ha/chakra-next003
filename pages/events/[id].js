@@ -10,7 +10,7 @@ import {
     Icon,
     Box,
 } from '@chakra-ui/react';
-import { FaRegAddressCard } from 'react-icons/fa';
+import { FaRegAddressCard, FaHouseDamage } from 'react-icons/fa';
 import React from 'react';
 import { useRouter } from 'next/router';
 import MainLayout from '../../layouts/MainLayout';
@@ -79,7 +79,7 @@ const EventDetailPage = () => {
                             <Feature
                                 icon={
                                     <Icon
-                                        as={FaRegAddressCard}
+                                        as={FaHouseDamage}
                                         color={'green.500'}
                                         w={5}
                                         h={5}

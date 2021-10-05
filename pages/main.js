@@ -5,7 +5,7 @@ import MainLayout from '../layouts/MainLayout';
 const main = () => {
     return (
         <MainLayout>
-            <Box h='89vh'>SignUp</Box>;
+            <Box h='89vh'>Main</Box>;
         </MainLayout>
     );
 };
