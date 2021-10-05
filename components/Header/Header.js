@@ -25,7 +25,7 @@ export default function Header() {
     const router = useRouter();
     return (
         <>
-            <Box bg={useColorModeValue('blue.50', 'blue.900')} px={4}>
+            <Box bg={useColorModeValue('blue.50', 'blue.900')} px={4} boxShadow="lg">
                 <Flex
                     h={16}
                     alignItems={'center'}
