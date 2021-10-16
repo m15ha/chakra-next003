@@ -33,7 +33,7 @@ const Todo = () => {
         const newItems = [...items, newItem];
         setItems(newItems);
         toast({
-            title: 'Todo was added successfully',
+            title: 'Todo was added successfully!!',
             status: 'success',
             position: 'top',
             duration: 5000,
