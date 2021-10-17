@@ -35,7 +35,7 @@ const Todo = () => {
         toast({
             title: 'Todo was added successfully!',
             status: 'success',
-            position: 'top',git status
+            position: 'top',
             duration: 5000,
             isClosable: true,
         });
