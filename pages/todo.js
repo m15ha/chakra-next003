@@ -33,9 +33,9 @@ const Todo = () => {
         const newItems = [...items, newItem];
         setItems(newItems);
         toast({
-            title: 'Todo was added successfully!!',
+            title: 'Todo was added successfully!',
             status: 'success',
-            position: 'top',
+            position: 'top',git status
             duration: 5000,
             isClosable: true,
         });
